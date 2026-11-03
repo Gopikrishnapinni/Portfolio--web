@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gopikrishna Pinni — DevOps Engineer</title>
+<meta name="description" content="DevOps Engineer with 2 years of experience in CI/CD, AWS, Kubernetes and Terraform, plus Java Spring Boot backend development. Based in Bengaluru.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f0fb;--surf:#fff;--ink:#1c1533;--mute:#62597d;--line:#ddd5f0;--acc:#6d3fd6;--onacc:#fff;--amb:#b4560a;--term:#0f0a24;--termink:#e4def8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0820;--surf:#1a1236;--ink:#ece8fb;--mute:#a69fc4;--line:#2e2354;--acc:#a78bfa;--onacc:#0d0820;--amb:#f0abfc;--term:#0a0618;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d0820;--surf:#1a1236;--ink:#ece8fb;--mute:#a69fc4;--line:#2e2354;--acc:#a78bfa;--onacc:#0d0820;--amb:#f0abfc;--term:#0a0618;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(900px 500px at 15% -5%,color-mix(in srgb,var(--acc) 22%,transparent),transparent),radial-gradient(700px 500px at 100% 30%,color-mix(in srgb,var(--amb) 14%,transparent),transparent),var(--bg);background-attachment:fixed;color:var(--ink);font:400 16px/1.6 'IBM Plex Sans',system-ui,sans-serif}
+.m{font-family:'JetBrains Mono',ui-monospace,monospace}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{max-width:1060px;margin:auto;padding:0 20px;height:56px;display:flex;align-items:center;gap:18px}
+.logo{font:700 15px 'JetBrains Mono',monospace;color:var(--ink)}
+nav{margin-left:auto;display:flex;gap:4px}
+nav a{font:500 13px 'JetBrains Mono',monospace;color:var(--mute);padding:6px 10px;border-radius:6px}
+nav a:hover{color:var(--acc);background:var(--surf);text-decoration:none}
+button{font:inherit;cursor:pointer}
+.ic{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;width:36px;height:36px}
+#menu{display:none}
+@media(max-width:760px){#menu{display:block}nav{display:none;position:absolute;top:56px;left:0;right:0;background:var(--bg);flex-direction:column;padding:10px 20px;border-bottom:1px solid var(--line)}nav.open{display:flex}.tg{margin-left:auto}}
+@media(min-width:761px){.tg{margin-left:8px}}
+main{max-width:1060px;margin:auto;padding:0 20px}
+section{padding:72px 0 8px}
+h2{font:700 24px 'JetBrains Mono',monospace;margin:0 0 4px}
+h2 i{font-style:normal;color:var(--amb)}
+.sub{color:var(--mute);margin:0 0 28px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding-top:56px}
+@media(max-width:860px){.hero{grid-template-columns:1fr}}
+h1{font:700 clamp(32px,5vw,50px)/1.1 'JetBrains Mono',monospace;margin:0 0 16px;letter-spacing:-.02em}
+.lead{color:var(--mute);max-width:52ch;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.b{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:8px;font:500 14px 'JetBrains Mono',monospace;border:1px solid var(--line);color:var(--ink);background:var(--surf)}
+.b.p{background:var(--acc);border-color:var(--acc);color:var(--onacc)}
+.b:hover{text-decoration:none;border-color:var(--acc)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 12px 'JetBrains Mono',monospace;border:1px solid var(--line);color:var(--mute);padding:3px 9px;border-radius:99px}
+.term{background:var(--term);color:var(--termink);border-radius:12px;border:1px solid var(--line);overflow:hidden;font:400 13px/1.7 'JetBrains Mono',monospace}
+.th{display:flex;gap:6px;padding:10px 14px;border-bottom:1px solid #22344a}
+.th s{width:10px;height:10px;border-radius:50%;background:#3a4b60;display:block}
+.tb{padding:14px 16px;min-height:250px;white-space:pre-wrap;word-break:break-word}
+.pr{color:#f0abfc}.ok{color:#6ee7a8}.cy{color:#a78bfa}
+.cur{display:inline-block;width:8px;height:15px;background:#a78bfa;vertical-align:-2px;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+.ph{width:104px;height:104px;border-radius:50%;border:2px dashed var(--acc);background:color-mix(in srgb,var(--acc) 12%,transparent);display:grid;place-items:center;color:var(--mute);font:11px 'JetBrains Mono',monospace;text-align:center;margin-bottom:16px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px}
+.st{border-left:2px solid var(--acc);padding:2px 12px}.st b{font:700 22px 'JetBrains Mono',monospace;display:block}.st span{color:var(--mute);font-size:13px}
+@media(max-width:560px){.stats{grid-template-columns:1fr}}
+.card{background:color-mix(in srgb,var(--surf) 72%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:18px;padding:22px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:860px){.g3{grid-template-columns:1fr 1fr}}@media(max-width:620px){.g2,.g3{grid-template-columns:1fr}}
+.card h3{margin:0 0 6px;font:600 16px 'IBM Plex Sans',sans-serif}
+.card p{margin:0 0 10px;color:var(--mute);font-size:15px}
+.tag{font:11.5px 'JetBrains Mono',monospace;color:var(--acc);margin-right:8px;white-space:nowrap}
+.hint{font:12px 'JetBrains Mono',monospace;color:var(--amb)}
+ul.l{margin:8px 0 0;padding-left:18px;color:var(--ink)}ul.l li{margin:4px 0}
+.exp{display:grid;gap:16px}
+.exp .meta{font:12.5px 'JetBrains Mono',monospace;color:var(--amb);margin-bottom:6px}
+details.card summary{cursor:pointer;list-style:none}
+details.card summary::-webkit-details-marker{display:none}
+details.card[open]{border-color:var(--acc)}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tab{font:500 13px 'JetBrains Mono',monospace;padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:none;color:var(--mute)}
+.tab[aria-selected="true"]{background:var(--acc);border-color:var(--acc);color:var(--onacc)}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.node{font:500 13px 'JetBrains Mono',monospace;padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.node[aria-pressed="true"]{border-color:var(--amb);color:var(--amb)}
+.arr{color:var(--mute)}
+#fd{margin:14px 0 0;min-height:48px;color:var(--mute)}
+.repo{display:flex;flex-direction:column;gap:4px}.repo .n{font:600 14px 'JetBrains Mono',monospace}
+.cert li{margin:6px 0}
+form{display:grid;gap:12px}
+label{font:500 13px 'JetBrains Mono',monospace;color:var(--mute);display:grid;gap:4px}
+input,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px}
+input[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:#e5484d}
+.err{color:#e5484d;font-size:12.5px;min-height:16px}
+#fs{min-height:22px;font:13px 'JetBrains Mono',monospace}
+footer{margin-top:80px;border-top:1px solid var(--line);padding:28px 20px calc(28px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--mute);font-size:14px}
+footer nav{display:flex;position:static;justify-content:center;flex-wrap:wrap;margin:10px 0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cur{animation:none}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="#home">gopi@devops:~$</a>
+<button class="ic" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav id="nav" aria-label="Main"><a href="#about">about</a><a href="#skills">skills</a><a href="#experience">experience</a><a href="#projects">projects</a><a href="#architecture">architecture</a><a href="#learning">learning</a><a href="#github">github</a><a href="#contact">contact</a></nav>
+<button class="ic tg" id="theme" aria-label="Toggle light or dark theme">◐</button>
+</div></header>
+
+<main>
+<section id="home" class="hero">
+<div>
+<div class="ph" role="img" aria-label="Profile photo placeholder">your photo<br>here</div>
+<h1>Hi, I’m Gopikrishna Pinni.</h1>
+<p class="lead">DevOps Engineer building reliable cloud infrastructure, automated CI/CD pipelines, and scalable applications.</p>
+<div class="btns">
+<a class="b p" href="#projects">View projects</a>
+<a class="b" href="#contact">Contact me</a>
+<a class="b" id="resume" href="https://drive.google.com/file/d/1B7NmAvQhsEMfSKLJreRokGSJyi1Owq48/view?usp=drive_link" target="_blank" rel="noopener">Resume</a>
+</div>
+<div class="btns"><a class="b" href="https://github.com/Gopikrishnapinni" target="_blank" rel="noopener">GitHub</a><a class="b" href="https://www.linkedin.com/in/gopikrishna-pinni-b275b9419" target="_blank" rel="noopener">LinkedIn</a></div>
+<div class="chips" id="kw"></div>
+</div>
+<div class="term" aria-label="Terminal showing a short bio"><div class="th"><s></s><s></s><s></s></div><div class="tb" id="tty"></div></div>
+</section>
+<div class="stats">
+<div class="st"><b>2 yrs</b><span>IT experience</span></div>
+<div class="st"><b>3</b><span>CI/CD pipelines maintained</span></div>
+<div class="st"><b>10+</b><span>Linux build and deploy failures resolved</span></div>
+</div>
+
+<section id="about">
+<h2><i>$</i> cat about.md</h2><p class="sub">Bengaluru, India · Associate Software Engineer at Luna Software Solutions (client: TCS)</p>
+<div class="card"><p style="color:var(--ink)">I build and maintain CI/CD pipelines for SupraMed, a production healthcare EMR platform. I work between application code and cloud infrastructure: Jenkins and GitHub Actions for build, test and Docker-based deployment, with AWS, Kubernetes and Terraform behind them.</p>
+<p>I also write Java and Spring Boot backend code, so I can read a failing build from both sides. When something breaks in production I work from root cause: I’ve resolved 10+ Linux-based build and deployment failures this way. My side projects add LLM-based failure analysis to CI/CD and ticket management.</p>
+<p style="margin:0"><b style="color:var(--ink)">Looking for:</b> DevOps, Cloud and SRE roles.</p></div>
+</section>
+
+<section id="skills">
+<h2><i>$</i> ls ~/skills</h2><p class="sub">Hands-on skills come from my resume. “Familiar” means learning or limited use.</p>
+<div class="g3" id="sk"></div>
+</section>
+
+<section id="experience">
+<h2><i>$</i> cat experience.log</h2><p class="sub">Professional experience</p>
+<div class="exp">
+<div class="card"><div class="meta">Sep 2024 – Present · Bengaluru, India</div>
+<h3>Associate Software Engineer (DevOps &amp; CI/CD) — Luna Software Solutions Pvt Ltd</h3>
+<p>Client: TCS · Project: SupraMed, a healthcare Electronic Medical Records platform</p>
+<ul class="l"><li>Build and maintain 3 CI/CD pipelines with Jenkins and GitHub Actions, automating build, test and Docker-based deployment.</li>
+<li>Containerize applications with Docker for consistent, repeatable deployments.</li>
+<li>Resolved 10+ Linux-based build and deployment failures through root-cause analysis.</li>
+<li>Manage Git and GitHub branching strategies for collaborative releases.</li>
+<li>Develop REST APIs with Java, Spring Boot and Spring Data JPA for patient records, appointments, referrals and clinic management, with role-based access control.</li></ul>
+<p style="margin-top:12px"><span class="tag">AWS EC2/EKS/ECR/IAM/CloudWatch</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span><span class="tag">Terraform</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Java</span><span class="tag">MySQL</span></p></div>
+<div class="card"><div class="meta">Oct 2023 – Apr 2024 · Hyderabad, India</div>
+<h3>Java Full Stack Developer Intern — PacketPrep</h3>
+<p>Built a full-stack Employee Management System: Spring Boot and Spring Data JPA REST APIs (create, read, update, delete) on MySQL, with a React.js, Axios and Bootstrap front end. Added form validation, exception handling and a Controller–Service–Repository structure.</p></div>
+</div></section>
+
+<section id="projects">
+<h2><i>$</i> ls ~/projects</h2><p class="sub">Select a project to see problem, workflow and stack.</p>
+<div class="g2" id="pj"></div>
+</section>
+
+<section id="architecture">
+<h2><i>$</i> ./show-architecture.sh</h2><p class="sub">Typical workflows I work with. Select a stage for details. These are illustrative, not diagrams of one specific system.</p>
+<div class="card"><div class="tabs" role="tablist" id="tabs"></div><div class="flow" id="flow"></div><p id="fd" aria-live="polite"></p></div>
+</section>
+
+<section id="learning">
+<h2><i>$</i> cat learning.txt</h2><p class="sub">Certifications and courses</p>
+<div class="g2">
+<div class="card"><h3>Completed</h3><ul class="l cert"><li>AWS Cloud Practitioner Essentials — Amazon Web Services <span class="hint">(from GitHub profile; add date and credential URL)</span></li>
+<li>AWS Cloud Computing — Udemy</li><li>Docker and Kubernetes — Udemy</li><li>Terraform Infrastructure as Code — Udemy</li><li>Jenkins and CI/CD Pipelines — Udemy</li></ul></div>
+<div class="card"><h3>In progress</h3><ul class="l"><li>Advanced Kubernetes (CKA preparation)</li><li>GitOps with ArgoCD and DevSecOps practices</li><li>Observability and SRE fundamentals</li></ul>
+<p style="margin-top:14px">B.Tech, Electronics and Communication Engineering — Dhanekula Institute of Engineering &amp; Technology, 2020–2024</p></div></div>
+</section>
+
+<section id="github">
+<h2><i>$</i> gh repo list</h2><p class="sub" id="gs">Loading repositories…</p>
+<div class="g3" id="gr"></div>
+<p><a class="b" href="https://github.com/Gopikrishnapinni?tab=repositories" target="_blank" rel="noopener">View all projects</a></p>
+</section>
+
+<section id="contact">
+<h2><i>$</i> ./contact.sh</h2><p class="sub">Open to DevOps, Cloud and SRE roles.</p>
+<div class="g2">
+<div class="card"><p>Email: <a href="mailto:mrgopikrishnapinni93@gmail.com">mrgopikrishnapinni93@gmail.com</a></p><p>LinkedIn: <a href="https://www.linkedin.com/in/gopikrishna-pinni-b275b9419" target="_blank" rel="noopener">gopikrishna-pinni-b275b9419</a></p><p>GitHub: <a href="https://github.com/Gopikrishnapinni" target="_blank" rel="noopener">Gopikrishnapinni</a></p><p style="margin:0">Location: Bengaluru, Karnataka, India</p></div>
+<form class="card" id="cf" novalidate>
+<label>Name<input name="name" autocomplete="name" required><span class="err"></span></label>
+<label>Email<input name="email" type="email" autocomplete="email" required><span class="err"></span></label>
+<label>Subject<input name="subject" required><span class="err"></span></label>
+<label>Message<textarea name="message" rows="4" required></textarea><span class="err"></span></label>
+<button class="b p" type="submit">Send message</button><div id="fs" role="status"></div>
+</form></div>
+</section>
+</main>
+
+<footer><div class="m" style="color:var(--ink)">Gopikrishna Pinni</div><div>DevOps Engineer · AWS Cloud Engineer · CI/CD Automation · Backend Developer</div>
+<nav aria-label="Footer"><a href="#about">about</a><a href="#projects">projects</a><a href="#contact">contact</a><a href="https://github.com/Gopikrishnapinni" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/gopikrishna-pinni-b275b9419" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:mrgopikrishnapinni93@gmail.com">Email</a></nav>
+<div>© <span id="yr"></span> Gopikrishna Pinni</div></footer>
+
+<script>
+const $=s=>document.querySelector(s),E=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!==undefined)e.textContent=h;return e};
+document.getElementById('yr').textContent=new Date().getFullYear();
+// theme + menu
+const root=document.documentElement;
+try{const t=localStorage.getItem('theme');root.dataset.theme=t||'dark'}catch(e){root.dataset.theme='dark'}
+$('#theme').onclick=()=>{const dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}};
+$('#menu').onclick=()=>{const o=$('#nav').classList.toggle('open');$('#menu').setAttribute('aria-expanded',o)};
+$('#nav').onclick=e=>{if(e.target.tagName==='A'){$('#nav').classList.remove('open');$('#menu').setAttribute('aria-expanded',false)}};
+// keywords
+['AWS','Docker','Kubernetes','Terraform','Jenkins','GitHub Actions','Linux','Spring Boot'].forEach(k=>$('#kw').append(E('span','chip',k)));
+// terminal typing
+const lines=['$ whoami','gopikrishna-pinni','$ cat role.txt','Associate Software Engineer, DevOps & CI/CD','Luna Software Solutions · client TCS','$ cat now.txt','Maintaining 3 CI/CD pipelines for SupraMed, a healthcare EMR platform','$ stack --hands-on','AWS · Docker · Kubernetes · Jenkins · GitHub Actions · Terraform · Prometheus · Grafana · Java'];
+const tty=$('#tty');
+function render(n,c){tty.innerHTML='';lines.slice(0,n).forEach(l=>{const d=E('div',l.startsWith('$')?'pr':'cy',l);tty.append(d)});if(c)tty.lastChild.after(E('span','cur'))}
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){render(lines.length,0)}else{let i=1;render(1,1);const t=setInterval(()=>{i++;render(i,i<lines.length);if(i>=lines.length)clearInterval(t)},650)}
+// skills
+const SK=[['Cloud',['AWS: EC2, IAM, VPC, S3, ECR, EKS, CloudWatch'],[]],
+['CI/CD & IaC',['Jenkins','GitHub Actions','Terraform','Maven'],['ArgoCD']],
+['Containers',['Docker','Kubernetes','Helm'],[]],
+['Monitoring & security',['Prometheus','Grafana','CloudWatch','Trivy','SonarQube'],['ELK Stack']],
+['Backend',['Java','Spring Boot','Spring Data JPA','REST APIs','RBAC & JWT'],[]],
+['Data & scripting',['MySQL','PostgreSQL','Shell/Bash','Python'],['JavaScript / React']],
+['Platform',['Linux','Git & GitHub','DNS, TCP/IP, Security Groups'],[]]];
+SK.forEach(([t,h,f])=>{const c=E('div','card');c.append(E('h3','',t));const p=E('p','');p.append(...h.map(x=>E('span','tag',x)));c.append(p);if(f.length){const q=E('p','hint','Familiar: '+f.join(', '));c.append(q)}$('#sk').append(c)});
+// projects
+const PJ=[
+{n:'AI-Powered CI/CD Security & Deployment Platform',d:'A 4-stage GitHub Actions pipeline for Spring Boot apps on AWS EKS with Terraform-provisioned infrastructure.',p:'Catching vulnerabilities before deploy and shortening failure diagnosis.',w:'Build → test → scan (Trivy, SonarQube) → deploy with Helm; an AI service analyzes pipeline failures; Prometheus and Grafana monitor.',t:['AWS','EKS','ECR','Terraform','GitHub Actions','Helm','Prometheus','Grafana','Python']},
+{n:'AI-Powered Support Ticket Platform',d:'Spring Boot REST backend with JWT authentication, RBAC and LLM integration.',p:'Manual ticket triage and drafting responses.',w:'LLM classifies tickets, sets priority and suggests responses; Dockerized, deployed to Kubernetes via GitHub Actions, monitored with Prometheus and Grafana.',t:['Java','Spring Boot','PostgreSQL','JWT','Docker','Kubernetes','GitHub Actions']},
+{n:'Cloud-Native E-Commerce Platform',d:'Microservices e-commerce project on Docker, Kubernetes and AWS.',p:'Practising containerized, orchestrated deployment of a multi-service app.',w:'Details are in the repository README.',t:['Microservices','Docker','Kubernetes','AWS'],u:'https://github.com/Gopikrishnapinni/Cloud-Native-E-Commerce-Platform-'},
+{n:'Employee Management System',d:'Full-stack app to create, view, update and delete employee records (built during my PacketPrep internship).',p:'Managing employee data through a simple web interface.',w:'React, Axios and Bootstrap front end calling Spring Boot REST APIs layered as Controller, Service, Repository, backed by MySQL.',t:['Java','Spring Boot','React','MySQL'],u:'https://github.com/Gopikrishnapinni/EMS-Full-Stack-Project'}];
+PJ.forEach(x=>{const d=E('details','card'),s=E('summary');s.append(E('h3','',x.n),E('p','',x.d));const tg=E('div');x.t.forEach(k=>tg.append(E('span','tag',k)));s.append(tg);d.append(s);
+const b=E('div');b.style.marginTop='12px';[['Problem solved',x.p],['Workflow',x.w]].forEach(([a,c])=>{const q=E('p');q.append(E('b','',a+': '),document.createTextNode(c));q.firstChild.style.color='var(--ink)';b.append(q)});
+if(x.u){const a=E('a','b','View repository');a.href=x.u;a.target='_blank';a.rel='noopener';b.append(a)}else b.append(E('span','hint','Repository link: add the public repo URL'));d.append(b);$('#pj').append(d)});
+// architecture
+const AR={'Jenkins CI/CD':[['Git push','Developer pushes to a GitHub branch.'],['Jenkins build','Jenkins checks out code and builds with Maven.'],['Test','Unit tests run; failures stop the pipeline.'],['Docker image','Image is built and tagged.'],['Deploy','Image is deployed to the target environment.']],
+'Docker → Kubernetes':[['Dockerfile','Application is packaged into an image.'],['Registry (ECR)','Image is pushed to a registry.'],['Deployment','Kubernetes pulls the image and runs replicas.'],['Service','A Service exposes the pods inside or outside the cluster.']],
+'Terraform on AWS':[['Write .tf','Infrastructure is described as code.'],['terraform plan','Preview of changes before applying.'],['terraform apply','Resources such as VPC, EKS and IAM are created.'],['State','State tracks what exists so changes are repeatable.']],
+'GitHub Actions':[['Push / PR','A workflow triggers on push or pull request.'],['Build','Compile and package.'],['Test','Run tests.'],['Scan','Trivy and SonarQube check images and code.'],['Deploy','Deploy to EKS with Helm.']],
+'Prometheus + Grafana':[['App metrics','Applications and nodes expose metrics.'],['Prometheus','Scrapes and stores time-series data.'],['Grafana','Dashboards visualize the data.'],['Alerts','Rules notify when thresholds are crossed.']]};
+const tabs=$('#tabs');let cur='';
+function show(k){cur=k;[...tabs.children].forEach(b=>b.setAttribute('aria-selected',b.textContent===k));const f=$('#flow');f.innerHTML='';$('#fd').textContent='Select a stage to see what happens there.';AR[k].forEach(([n,d],i)=>{if(i)f.append(E('span','arr','→'));const b=E('button','node',n);b.setAttribute('aria-pressed','false');b.onclick=()=>{[...f.querySelectorAll('.node')].forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');$('#fd').textContent=d};f.append(b)})}
+Object.keys(AR).forEach(k=>{const b=E('button','tab',k);b.setAttribute('role','tab');b.onclick=()=>show(k);tabs.append(b)});show('Jenkins CI/CD');
+// github
+const SNAP=[['EMS-Full-Stack-Project','JavaScript'],['Cloud-Native-E-Commerce-Platform-','—'],['SpringBoot_RESTful_API','Java'],['Task-Management-Application','TypeScript'],['Swiggy_Clone','JavaScript'],['Backend-Nodejs-Suby','JavaScript']];
+function repos(list,live){$('#gr').innerHTML='';list.forEach(r=>{const a=E('a','card repo');a.href='https://github.com/Gopikrishnapinni/'+r.name;a.target='_blank';a.rel='noopener';a.append(E('span','n',r.name));if(r.description)a.append(E('p','',r.description));a.append(E('span','tag',(r.language||'—')+(live?` · ★ ${r.stars} · forks ${r.forks} · updated ${r.updated}`:'')));$('#gr').append(a)});$('#gs').textContent=live?'Live from the GitHub API.':'Showing a saved list of public repositories; live data loads when the API is reachable.'}
+repos(SNAP.map(([name,language])=>({name,language})),false);
+(async()=>{try{const c=new AbortController();setTimeout(()=>c.abort(),5000);const r=await fetch('https://api.github.com/users/Gopikrishnapinni/repos?sort=updated&per_page=6',{signal:c.signal});if(!r.ok)throw 0;const j=await r.json();repos(j.map(x=>({name:x.name,description:x.description,language:x.language,stars:x.stargazers_count,forks:x.forks_count,updated:x.updated_at.slice(0,10)})),true)}catch(e){}})();
+// contact
+$('#cf').onsubmit=async e=>{e.preventDefault();const f=e.target,v={};let ok=true;
+[...f.elements].filter(x=>x.name).forEach(x=>{v[x.name]=x.value.trim();const m=x.nextElementSibling;let bad=!v[x.name]?'Required.':(x.type==='email'&&!/^\S+@\S+\.\S+$/.test(v[x.name])?'Enter a valid email address.':'');m.textContent=bad;x.setAttribute('aria-invalid',!!bad);if(bad)ok=false});
+if(!ok)return;const s=$('#fs');s.textContent='Sending…';
+try{throw 0}catch(x){location.href='mailto:mrgopikrishnapinni93@gmail.com?subject='+encodeURIComponent(v.subject)+'&body='+encodeURIComponent(v.message+'\n\n'+v.name+' ('+v.email+')');s.textContent='Opening your email app to send this message.'}};
+</script>
+</body>
+</html>
